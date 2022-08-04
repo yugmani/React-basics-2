@@ -55,7 +55,7 @@ class UserGreeting extends Component {
       <div className="conditional-render">
         <h1>Conditional Rendering</h1>
         {this.state.isLoggedIn ? (
-          <div className={myStyle}>Welcome {this.props.name}</div>
+          <div className={`${myStyle} pad10`}>Welcome {this.props.name}</div>
         ) : (
           <div className={myStyle}>Welcome Guest</div>
         )}
