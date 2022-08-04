@@ -20,6 +20,12 @@ function PersonList() {
       age: 28,
       skill: 'React',
     },
+    {
+      id: 4,
+      name: 'Aayush',
+      age: 21,
+      skill: 'Node',
+    },
   ];
 
   const personList = persons.map((person) => (
@@ -27,9 +33,11 @@ function PersonList() {
   ));
 
   return (
-    <div>
+    <div className="list-body">
       <h1>List Rendering</h1>
+      <ul>
       {personList}
+      </ul>
     </div>
   );
 }

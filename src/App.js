@@ -7,7 +7,7 @@ import PersonList from './components/PersonList';
 export default function App() {
   return (
     <div>
-      <UserGreeting />
+      <UserGreeting name="Yoog" />
       <NameList />
       <PersonList />
     </div>

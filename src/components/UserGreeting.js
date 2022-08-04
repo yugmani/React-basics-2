@@ -10,6 +10,8 @@ class UserGreeting extends Component {
   }
 
   render() {
+    const myStyle = this.state.isLoggedIn ? 'logged' : 'not-logged';
+
     // Using if ... else block
     // *************************
     // if (this.state.isLoggedIn) {
@@ -50,12 +52,12 @@ class UserGreeting extends Component {
     // Using Ternary Operator
     // *************************
     return (
-      <div>
+      <div className="conditional-render">
         <h1>Conditional Rendering</h1>
         {this.state.isLoggedIn ? (
-          <div className="logged">Welcome Yoog</div>
+          <div className={myStyle}>Welcome {this.props.name}</div>
         ) : (
-          <div className="not-logged">Welcome Guest</div>
+          <div className={myStyle}>Welcome Guest</div>
         )}
       </div>
     );

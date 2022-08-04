@@ -8,8 +8,45 @@ p {
   color: blue;
   font-size: 25px;
   font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* text-align: centr; */
 }
 
 .not-logged {
   color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* text-align: center; */
+}
+
+.list-body {
+  background-color: whitesmoke;
+  padding: 10px;
+}
+
+.odd {
+  background-color: lightgray;
+}
+
+.even {
+  background-color: lightpink;
+}
+
+h1,
+h2,
+h3,
+p {
+  text-align: center;
+}
+
+ul > li {
+  padding: 5px 0;
+}
+
+.conditional-render {
+  background-color: lightyellow;
+  padding: 10px;
 }

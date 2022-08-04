@@ -1,11 +1,13 @@
 import React from 'react';
 
 function Person({ person }) {
-  const { name, age, skill } = person;
+  const { id, name, age, skill } = person;
+  let primary = id % 2 === 0 ? 'even' : 'odd';
+  
   return (
-    <h3>
+    <li className={primary}>
       My name is {name} and {age} years old. I am learning {skill}.
-    </h3>
+    </li>
   );
 }
 
