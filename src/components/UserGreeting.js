@@ -5,10 +5,8 @@ class UserGreeting extends Component {
     super(props);
 
     this.state = {
-      isLoggedIn: false,
+      isLoggedIn: true,
     };
-
-    // this.state.isLoggedIn = this.state.isLoggedIn.bind(this);
   }
 
   render() {
