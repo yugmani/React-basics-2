@@ -28,22 +28,32 @@ class Form extends Component {
       topic: event.target.value,
     });
   };
+
+  handleSubmit = (event) => {
+    console.log(
+      `${this.state.username} ${this.state.comments} ${this.state.topic}`
+    );
+    event.preventDefault();
+  };
+
   render() {
+    const { username, comments, topic } = this.state;
+
     return (
-      <form>
+      <form onSubmit={this.handleSubmit} className="user-form">
         <div>
           <label htmlFor="username">Username: </label>
           <input
             name="username"
             type="text"
-            value={this.state.username}
+            value={username}
             onChange={this.handleUsernameChange}
           />
         </div>
         <div>
           <label>Comments: </label>
           <textarea
-            value={this.state.comments}
+            value={comments}
             onChange={this.handleCommentsChange}
           ></textarea>
         </div>
@@ -52,7 +62,7 @@ class Form extends Component {
           <select
             name="courses"
             id=""
-            value={this.state.topic}
+            value={topic}
             onChange={this.handleTopicChange}
           >
             <option value="react">React</option>
@@ -60,6 +70,7 @@ class Form extends Component {
             <option value="vue">Vue</option>
           </select>
         </div>
+        <button type="submit">Submit</button>
       </form>
     );
   }

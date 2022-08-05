@@ -53,3 +53,31 @@ ul > li {
 .pad10 {
   padding: 10px;
 }
+
+.user-form {
+  background-color: lightsteelblue;
+  padding: 5px;
+}
+.user-form > * {
+  margin: 5px 0;
+}
+
+button {
+  background-color: blue;
+  color: white;
+  padding: 0 5px;
+  transition: 300ms ease-in-out;
+}
+
+.user-form input:focus,
+.user-form textarea:focus,
+.user-form select:focus {
+  outline: none;
+  border: none;
+}
+
+.user-form > button:hover {
+  cursor: pointer;
+  background-color: navy;
+  transform: scale(1.1);
+}
