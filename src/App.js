@@ -4,6 +4,7 @@ import UserGreeting from './components/UserGreeting';
 import NameList from './components/NameList';
 import PersonList from './components/PersonList';
 import Form from './components/Form';
+import ParentComp from './components/ParentComp';
 
 export default function App() {
   return (
@@ -12,6 +13,7 @@ export default function App() {
       <NameList />
       <PersonList />
       <Form />
+      <ParentComp />
     </div>
   );
 }
